@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "module": "commonjs",
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "target": "ES6",
+    "module": "CommonJS",
+    "lib": ["es2015"],
+    "typeRoots": ["./env.d.ts", "node_modules/@types"],
+    "outDir": "dist",
+    "noEmit": false,
+    "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
     "skipLibCheck": true
   }
 }

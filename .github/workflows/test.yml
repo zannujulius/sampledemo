@@ -1,0 +1,27 @@
+name: Run Backend test
+
+on:
+  push:
+    branches:
+      - main
+      # - stable // you can specify multiple branches
+
+jobs:
+  test:
+    name: Run backend test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code repository
+        uses: actions/checkout@v3
+
+      - name: Use Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.x" # specify any verion as needed
+
+      - name: Instal dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm run test
