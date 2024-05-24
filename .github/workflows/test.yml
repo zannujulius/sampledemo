@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - stable
       # - stable // you can specify multiple branches
 
 jobs:
