@@ -1,3 +1,11 @@
+/**
+ *
+ * @author Julius Zannu
+ * @description This is a simple node application
+ * using express.
+ *
+ */
+
 import express, { Request, Response, NextFunction } from "express";
 
 const app = express();
