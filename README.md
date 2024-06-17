@@ -2,7 +2,7 @@
 
 npm init -y
 
-npm tsc --init
+npx tsc --init
 
 add necessary config to the tsconfig.ts file
 
@@ -18,6 +18,6 @@ Install all the dependency for types for express, jest, typescript
 
 follow the link to setup
 
-to instal jest in your node tyoescript project
+to install jest in your node tyoescript project
 follow the line below
 https://dev.to/ghostaram/configuring-jest-for-typescript-unit-tests-4iag
